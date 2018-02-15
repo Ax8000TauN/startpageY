@@ -1,19 +1,13 @@
-@font-face
-{
-    font-family:'haxrcorp';
-    src: url('haxrcorpttf.ttf');
-}
-
 input {
-	font-family: haxrcorp, monospace;
-	font-size:15px;
+	font-family: ProFontWindows. monospace;
+	font-size:12px;
 }
 
 body{
-	font-family: haxrcorp, monospace;
-	font-size:15px;
-	background-color:#F8F8F8;
-	background-image: url("img/bg_tile.jpg");
+	font-family: ProFontWindows, monospace;
+	font-size:12px;
+	background-color:#272727;
+	background-image: url("img/bg.png");
 	background-repeat: repeat;
 }
 
@@ -32,16 +26,15 @@ body{
 .main {
 	border-style: solid;
 	border-width: 2px;
-	border-color: #000000;
+	border-color: rgba(200,200,200,.8);
 	position: absolute;
 	top: -2px;
-
     width: 536px;
 	height: 300px;
     left: -2px;
     right: 190px;
     margin: auto;
-	background-color:#FFFFFF;
+	background-color: rgba(255,255,255,.8);
 	text-align:center;
 }
 
@@ -57,8 +50,8 @@ body{
 	margin-right:2px;
 	border-style: solid;
 	border-width: 2px;
-	border-color: #000000;
-	background-color:#ffffff;
+	border-color: rgba(200,200,200,.8);
+	background-color:rgba(255,255,255,.8);
 }
 
 .button:hover {
@@ -68,29 +61,30 @@ body{
 .searchbar {
 	border-style: solid;
 	border-width: 2px;
-	border-color: #000000;
+	border-color: rgba(200,200,200,.8);
     width: auto;
 	height: 12px;
-	background-color:#FFFFFF;
 	overflow: hidden;
+	background-color: rgba(255,255,255,.8);
 }
 
 .searchinput {
 	line-height:13px;
 	height:12px;
-	top:-1px;
+	top:0px;
 	position:relative;
-	margin-left:1px;
+	margin-left:0px;
 	margin-right:1px;
 	width:100%;
 	border:none;
-	font-family: haxrcorp, monospace;
-	font-size:15px;
+	font-family: ProFontWindows, monospace;
+	font-size:10px;
 	padding-bottom: 0px;
 	padding-top:0px;
 	padding-left:2px;
 	padding-right:2px;
 	outline:none;
+	background-color: transparent;
 }
 
 .searchinput:focus {
@@ -101,13 +95,13 @@ body{
 .marqueebar {
 	border-style: solid;
 	border-width: 2px;
-	border-color: #000000;
+	border-color: rgba(200,200,200,.8);
     width: 300px;
 	height: 12px;
 	line-height:12px;
 	float:right;
 	margin-left:2px;
-	background-color:#FFFFFF;
+	background-color:rgba(255,255,255,.8);
 	overflow:hidden;
 }
 
@@ -135,23 +129,24 @@ body{
 .sidebar {
 	border-style: solid;
 	border-width: 2px;
-	border-color: #000000;
+	border-color: rgba(200,200,200,1);
 	position: absolute;
 	top: -2px;
 	bottom:200px;
     width: 129px;
 	height: 319px;
     left: 541px;
-	background-color:#FFFFFF;
+	background-color:rgba(255,255,255,1);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	opacity: 0.8;
 }
 
 .time {
 	color:#FFFFFF;
-	font-family: haxrcorp, monospace;
-	font-size:16px;
+	font-family: ProFontWindows, monospace;
+	font-size:12px;
 	position: absolute;
 	top: -18px;
     width: auto;
@@ -161,7 +156,7 @@ body{
 
 .welcome {
 	line-height:18px;
-	font-family: haxrcorp, monospace;
+	font-family: ProFontWindows, monospace;
 	font-size:22px;
 	position:absolute;
 	top:80px;
@@ -180,7 +175,6 @@ body{
 }
 
 .marquee-text{
-	
 	position:absolute;
 	top:1px;
 	padding-left:2px;
@@ -206,12 +200,12 @@ li {
 }
 
 li:hover {
-	background-color:#eeeeee;
+	background-color: none;
 }
 
 a {
 	text-decoration:none;
-	font-size:16px;
+	font-size:11px;
 	height:12px;
 	line-height:12px;
 	color:#000000;
@@ -222,7 +216,7 @@ a:hover {
 }
 
 .clink {
-	font-size: 16px;
+	font-size: 11px;
 	text-decoration:none;
 	line-height: 16px;
 	color:#000000;
@@ -232,3 +226,6 @@ a:hover {
 	text-decoration:underline;
 }
 
+::-moz-selection {
+  background: rgba(0,0,0,0.5); /* Gecko Browsers */
+}
