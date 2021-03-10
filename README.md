@@ -1,3 +1,2 @@
-# STARTPAGE Y
-
-just an edit of someone else's startpage
+# STARTPAGE Y - a learning experience
+Edited someone else's work for personal use and practice
